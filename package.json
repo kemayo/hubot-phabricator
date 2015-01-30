@@ -1,0 +1,35 @@
+{
+  "name": "hubot-phabricator",
+  "description": "A hubot script to expand references to Phabricator objects",
+  "version": "1.0.0",
+  "author": "David Lynch <kemayo@gmail.com>",
+  "license": "MIT",
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "phabricator"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kemayo/hubot-phabricator.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/kemayo/hubot-phabricator/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "canduit": "~1.0.0"
+  },
+
+  "devDependencies": {
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+  }
+}
