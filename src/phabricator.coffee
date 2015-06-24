@@ -32,7 +32,7 @@ module.exports = (robot) ->
 
   # object (the TDPQFV bit is the things we recognize as prefixes)
   robot.hear /(?:^|[\[\s])([TDPQFV][0-9]+|r[A-Z]+[a-f0-9]+)(?:\s*(-v))?(?=\W|$)/g, (msg) ->
-    names = (match.trim() for match in msg.match when match.trim() in ignore)
+    names = (match.trim() for match in msg.match when match.trim() not in ignore)
     if names.length == 0
       return
     conduit.exec 'phid.lookup', {names: names}, (error, result) ->
