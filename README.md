@@ -16,6 +16,8 @@ Then add `"hubot-phabricator"` to `external-scripts.json`
 
 `HUBOT_PHABRICATOR_API` - Required URL for your API endpoint, e.g. `https://secure.phabricator.com/api/`
 
+`HUBOT_PHABRICATOR_IGNORE` - Optional comma-separated list of phabricator objects that you want hubot to ignore.
+
 ## Commands
 
 Hubot will listen for you mentioning something that sounds like a phabricator object, and will attempt to expand upon it.
