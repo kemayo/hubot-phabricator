@@ -1,7 +1,7 @@
 {
   "name": "hubot-phabricator",
   "description": "A hubot script to expand references to Phabricator objects",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "David Lynch <kemayo@gmail.com>",
   "license": "MIT",
 

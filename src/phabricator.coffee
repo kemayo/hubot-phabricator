@@ -28,7 +28,7 @@ module.exports = (robot) ->
   conduit = createCanduit config,
     (error, conduit) ->
 
-  ignore = process.env.HUBOT_PHABRICATOR_IGNORE.replace(/\s+/g, '').split(',')
+  ignore = (process.env.HUBOT_PHABRICATOR_IGNORE || '').replace(/\s+/g, '').split(',')
 
   # object (the TDPQFV bit is the things we recognize as prefixes)
   robot.hear /(?:^|[\[\s])([TDPQFV][0-9]+|r[A-Z]+[a-f0-9]+)(?:\s*(-v))?(?=\W|$)/g, (msg) ->
