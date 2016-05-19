@@ -2,12 +2,11 @@
 #   Auto-reply with descriptions and links to phabricator objects
 #
 # Dependencies:
-#   "canduit": "!1.0.0"
+#   "canduit": "^1.1.2"
 #
 # Configuration:
-#   HUBOT_PHABRICATOR_USER=username
 #   HUBOT_PHABRICATOR_API=api-uri
-#   HUBOT_PHABRICATOR_CERT=certificate
+#   HUBOT_PHABRICATOR_API_TOKEN=api-xxxxxx
 #   HUBOT_PHABRICATOR_IGNORE=[T1000,D999,etc]
 #
 # Commands:
@@ -20,9 +19,8 @@ createCanduit = require('canduit')
 
 module.exports = (robot) ->
   config = {
-    user: process.env.HUBOT_PHABRICATOR_USER
     api: process.env.HUBOT_PHABRICATOR_API
-    cert: process.env.HUBOT_PHABRICATOR_CERT
+    token: process.env.HUBOT_PHABRICATOR_API_TOKEN
     # logger: console
   }
   conduit = createCanduit config,
